@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "GWDroughtCalifornia — SGI/event/trend/persistence workflow"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Dikbaş
+    given-names: Fatih
+repository-code: "https://github.com/fdikbas/GWDroughtCalifornia"
+license: GPL-3.0-only
+version: "1.0.0"
+date-released: "2025-10-27"
+preferred-citation:
+  type: article
+  title: "Groundwater Drought Dynamics in California (2009–2022): Assessment with the Standardized Groundwater-Level Index, Event and Trend Metrics, and a Drought-Persistence Index"
+  authors:
+    - family-names: Dikbaş
+      given-names: Fatih
+  journal: "Journal of Hydrology"
+  year: 2025
