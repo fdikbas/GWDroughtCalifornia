@@ -39,14 +39,14 @@ The workflow ingests one monthly well dataset, builds a Standardized Groundwater
 
 Put your input CSV (same schema as california_gw_minimal_long.csv) in the repo root.
 
-In california_gw_all_in_one_EN_*.py, confirm:
+In california_gw_all_in_one_v1.0.py, confirm:
 
 CALIF_FILE = "california_gw_minimal_long.csv"
 
 
 Run:
 
-python california_gw_all_in_one_EN_2025.10.21.v3.py
+python california_gw_all_in_one_v1.0.py
 
 
 Outputs appear under:
@@ -60,9 +60,9 @@ out_SGI_plots_EN/ (per-well SGI series)
 out_annual_gw_maps_EN/ (absolute annual WSE)
 
 out_annual_anomaly_maps_EN/ (annual WSE anomalies)
+
 Each folder is described below. 
 
-california_gw_all_in_one_EN_202…
 
 Note: Basemap tiles are optional and time-capped; everything runs without internet.
 
@@ -92,7 +92,6 @@ sgi_drought_events.csv – full event log (start/end, duration, severity)
 drought_metrics_yearly.csv – annual per-well metrics (NumEvents, MaxDroughtDuration, MinSGI, CumulativeDeficit)
 All paths produced by the script. 
 
-california_gw_all_in_one_EN_202…
 
 Figures (TIFF, 400 dpi) – out_figs_EN/
 
@@ -105,7 +104,6 @@ fig2_annual_mean_heatmap_WSE.tiff (annual WSE anomalies; wells × years)
 fig3_sgi_sen_slope_per_well.tiff (per-well Sen’s slope, SGI per year; * marks p<0.05)
 (Size & palette match the manuscript figures; color semantics consistent.) 
 
-california_gw_all_in_one_EN_202…
 
 Spatial drought-metric rasters (TIFF) – out_SGI_spatial_EN/
 
@@ -113,25 +111,18 @@ For each year:
 MaxDroughtDuration_<YYYY>.tiff, MinSGI_<YYYY>.tiff, CumulativeDeficit_<YYYY>.tiff, NumEvents_<YYYY>.tiff
 (IDW on a fixed extent; consistent color logic “red=worse” for all metrics.) 
 
-california_gw_all_in_one_EN_202…
 
 Per-well SGI series (TIFF) – out_SGI_plots_EN/
 
 SGI_series_<WELL>.tiff with shaded severity bands and monthly markers. 
 
-california_gw_all_in_one_EN_202…
-
 Annual WSE maps (TIFF) – out_annual_gw_maps_EN/
 
 Interpolated absolute annual WSE (IDW), fixed extent, consistent DPI. 
 
-california_gw_all_in_one_EN_202…
-
 Annual WSE anomaly maps (TIFF) – out_annual_anomaly_maps_EN/
 
 Diverging, zero-centered scale across all years for direct comparability. 
-
-california_gw_all_in_one_EN_202…
 
 Configuration knobs (in the script)
 
@@ -151,7 +142,6 @@ Basemaps: optional (time-capped); tiles skipped automatically if slow/unavailabl
 
 CRS: EPSG:4326 for input; mapping in California Albers (EPSG:3310) 
 
-california_gw_all_in_one_EN_202…
 
 Reproducibility
 
@@ -163,9 +153,8 @@ Figures are exported at fixed size/DPI to avoid layout drift.
 
 Color scales are either fixed or data-aware but consistent across years. 
 
-california_gw_all_in_one_EN_202…
 
-Cite
+CITE:
 
 If this code or outputs support your work, please cite the article (when available) and this repository (see CITATION.cff). A short software citation is:
 
