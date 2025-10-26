@@ -4,7 +4,7 @@
 
 This repository hosts a single-file Python workflow and example input to reproduce all figures and tables reported in the manuscript:
 
-**“Groundwater Drought Dynamics in California (2009–2022): Assessment with the Standardized Groundwater-Level Index, Event and Trend Metrics, and a Drought-Persistence Index.”**
+**“Groundwater Drought Dynamics in California (2008–2021): Assessment with the Standardized Groundwater-Level Index, Event and Trend Metrics, and a Drought-Persistence Index.”**
 
 The workflow ingests one monthly well dataset, builds a Standardized Groundwater-level Index (SGI), parses drought events, tests monotonic trends (Mann–Kendall with Sen’s slope), maps annual anomalies and network-scale persistence (GW-NDSPI), and exports publication-ready TIFFs (400 dpi) and CSVs—end-to-end and reproducibly.
 
