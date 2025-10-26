@@ -12,7 +12,7 @@ The workflow ingests one monthly well dataset, builds a Standardized Groundwater
 
 ## What’s here
 
-- **`california_gw_all_in_one_EN_YYYY.MM.DD.v*.py`**  
+- **`california_gw_all_in_one_v.1.0.py`**  
   Single-file, end-to-end analysis and figure engine. Parameters are declared near the top (CRS, IDW power, grid density, color scales, basemap behavior, figure sizes, etc.).  
   _Method summary and output directories embedded inside the file._ :contentReference[oaicite:1]{index=1}
 
