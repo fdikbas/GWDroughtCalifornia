@@ -189,21 +189,6 @@ Module not found: Install via requirements.txt or environment.yml.
 
 ---
 
-# 2) `requirements.txt`
-
-```text
-python>=3.10
-numpy
-pandas
-matplotlib
-scipy
-tqdm
-joblib
-contextily
-geopandas
-shapely
-
-
 If you don’t need basemaps, you can omit contextily, geopandas, and shapely.
 - No manual steps—results regenerate from the single script + CSV. :contentReference[oaicite:2]{index=2}
 
