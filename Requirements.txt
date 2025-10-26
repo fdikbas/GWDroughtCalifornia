@@ -1,0 +1,11 @@
+```text
+python>=3.10
+numpy
+pandas
+matplotlib
+scipy
+tqdm
+joblib
+contextily
+geopandas
+shapely
